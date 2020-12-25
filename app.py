@@ -11,7 +11,7 @@ def download(id):
     try:
         video_object = YouTube(url)  
     except exceptions.RegexMatchError:
-        return "Invalid URL. After /download/, add the ID of the video. For example:\n roxenoz.xyz/download/ATOX9uMKtC4"
+        return "Invalid URL. After /download/, add the ID of the video. For example:\n localhost:5000/download/ATOX9uMKtC4"
 
     if video_object.length > 1800:
         return "That video is too long! Your video can be up to 30 minutes long."   
